@@ -1,0 +1,1 @@
+Welcome to the gst-kurento-plugins wiki!
