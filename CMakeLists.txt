@@ -30,6 +30,7 @@ set (GNUTLS_REQUIRED 3.2.0)
 set (SOUP_REQUIRED 2.40)
 set (NICE_REQUIRED 0.1.4)
 set (OPENCV_REQUIRED 2.0.0)
+set (GSTMARSHAL_REQUIRED 0.0.1)
 
 pkg_check_modules(GSTREAMER REQUIRED gstreamer-1.0>=${GST_REQUIRED})
 pkg_check_modules(GSTREAMER_BASE REQUIRED gstreamer-base-1.0>=${GST_REQUIRED})
@@ -42,6 +43,7 @@ pkg_check_modules(GNUTLS REQUIRED gnutls>=${GNUTLS_REQUIRED})
 pkg_check_modules(SOUP REQUIRED libsoup-2.4>=${SOUP_REQUIRED})
 pkg_check_modules(NICE REQUIRED nice>=${NICE_REQUIRED})
 pkg_check_modules(OPENCV REQUIRED opencv>=${OPENCV_REQUIRED})
+pkg_check_modules(GSTMARSHAL REQUIRED libgstmarshal>=${GSTMARSHAL_REQUIRED})
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMake")
 
