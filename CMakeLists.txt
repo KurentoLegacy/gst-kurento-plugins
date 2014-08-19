@@ -9,7 +9,7 @@ find_package(KurentoHelpers REQUIRED)
 
 include (KurentoGitHelpers)
 
-get_git_version (PROJECT_VERSION 1.2.16)
+get_git_version (PROJECT_VERSION 1.2.17-dev)
 install_git_hook (pre-commit ${CMAKE_CURRENT_SOURCE_DIR}/hooks/pre-commit.hook)
 
 string(REPLACE "." ";" VERSION_LIST ${PROJECT_VERSION})
